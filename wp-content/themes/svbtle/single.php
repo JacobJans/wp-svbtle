@@ -10,7 +10,7 @@
 get_header(); ?>
 
 <header id="begin">
-  <?php if( isset( $options['showdate'] ) && $options['showdate'] == TRUE ) { ?>
+  <?php if( isset( $options['showdate'] ) && $options['showdate'] OR !isset( $options['showdate'] ) ) { ?>
   <time datetime="<?php echo date('Y-m-d'); ?>" id="top_time"><?php the_time('F d, Y'); ?></time>
   <?php } ?>
 
