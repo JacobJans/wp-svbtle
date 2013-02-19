@@ -10,7 +10,9 @@
 get_header(); ?>
 
 <header id="begin">
+  <?php if( isset( $options['showdate'] ) && $options['showdate'] == TRUE ) { ?>
   <time datetime="<?php echo date('Y-m-d'); ?>" id="top_time"><?php the_time('F d, Y'); ?></time>
+  <?php } ?>
 
   <style type='text/css'>
     #also-read-title {
